@@ -10,7 +10,15 @@
         /* nowrap (default) wrap wrap-reverse */
         .container{
             display: flex;
-            /* flex-direction: row; */
+            flex-direction: row;
+            /*  if content fit in one line or else it will override in same line line with slider*/
+            /* flex-wrap: nowrap; */
+
+            /*  if content fit in one line or else it will go for next line*/
+            /* flex-wrap: wrap; */
+
+            flex-wrap: wrap-reverse;
+            
     </style>
   </head>
   <body>
@@ -22,6 +30,11 @@
       <div class="box box-3">3</div>
       <div class="box box-4">4</div>
       <div class="box box-5">5</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
     </div>
   </body>
 </html>
