@@ -7,24 +7,22 @@
 }
 
 .container {
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40px 200px 40px; 
+    grid-template-rows: 40px auto 40px; 
     gap: 3px;
+    
   }
 
 .header {
     background: #581f18;
-    /* grid column based on column line so 2 grid have 3 coloumn line */
-    grid-column-start: 1;
-    grid-column-end: 3;
-    /* ----shorthand---- */
-    grid-column: 2/-1;
+    grid-column: 1/-1;
 
 }
 .menu {
     background: #f0a202;
-    grid-row: 1/3;
+    
 }
 .content {
     background: #d95d39;
@@ -32,10 +30,5 @@
 }
 .footer {
     background: #202c59;
-    /* grid-column: 1/3; */
-    /* ---or--- */
-    grid-column: 1/span 2;
-    /* span 2 means take space till 2 coloumn */
     grid-column: 1/-1;
-    /* -1 will take the maximum space of column */
 }
