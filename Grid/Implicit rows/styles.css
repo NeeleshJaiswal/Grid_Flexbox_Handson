@@ -1,0 +1,22 @@
+
+.box{
+    /* padding: 30px; */
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.container {
+    display: grid;
+    /* grid used but not responsive */
+    /* grid-template-columns: repeat(6, 100px); */
+
+    /* responsive but extra space on left side*/
+    grid-template-columns: repeat(auto-fit, 100px);
+
+    /* responsive and no unutilized space*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(2 100px);
+    gap: 5px;
+  }
+
